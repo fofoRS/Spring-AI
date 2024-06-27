@@ -1,4 +1,4 @@
-package org.demo.ai;
+package org.demo.ai.entityResponse;
 
 import java.util.List;
 

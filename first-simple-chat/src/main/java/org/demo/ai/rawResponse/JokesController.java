@@ -1,4 +1,4 @@
-package org.demo.ai;
+package org.demo.ai.rawResponse;
 
 import org.springframework.ai.chat.messages.Message;
 import org.springframework.ai.chat.prompt.Prompt;

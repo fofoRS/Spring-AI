@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.demo.ai</groupId>
-	<artifactId>first-spring-ai-app</artifactId>
+	<artifactId>first-simple-chat</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>first-spring-ai-app</name>
 	<description>Intro about Spring AI</description>

@@ -1,13 +1,10 @@
-package org.demo.ai;
+package org.demo.ai.entityResponse;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.PromptTemplate;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
@@ -22,8 +19,8 @@ public class BooksController {
         this.chatClient = ChatClient.builder(chatModel).build();
     }
 
-    @GetMapping("/recommend/{topic}")
-    public BookRecommendation recommend(@PathVariable String topic) {
+    @GetMapping("book/recommend")
+    public BookRecommendation recommend(@RequestParam(value = "topic", defaultValue = "finance") String topic) {
         String userMessage =
                 """
                 Give the top ranked book name about {topic},
